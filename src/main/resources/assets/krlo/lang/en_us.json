@@ -4,11 +4,11 @@
   "text.autoconfig.krlo.option.masterToggle.@Tooltip": "Enables/Disables the mod",
   "text.autoconfig.krlo.category.categories": "Category Filters",
   "text.autoconfig.krlo.option.categories.items": "Items",
-  "text.autoconfig.krlo.option.categories.items.@Tooltip": "Covers general items such as books, tools, and fishing rods.",
+  "text.autoconfig.krlo.option.categories.items.@Tooltip": "fishing rod, books, tools (flint & steel, carrot on a stick, brush, compass, shears, etc.)",
   "text.autoconfig.krlo.option.categories.weapons": "Weapons",
-  "text.autoconfig.krlo.option.categories.weapons.@Tooltip": "Swords, tridents, bows, crossbows, axes, shields, and similar gear.",
+  "text.autoconfig.krlo.option.categories.weapons.@Tooltip": "swords, tridents, bows, crossbows, axes, maces, and shields.",
   "text.autoconfig.krlo.option.categories.armor": "Armor",
-  "text.autoconfig.krlo.option.categories.armor.@Tooltip": "Player armor, horse armor, and elytra glint.",
+  "text.autoconfig.krlo.option.categories.armor.@Tooltip": "player/animal armor and elytra.",
   "text.autoconfig.krlo.option.categories.other": "Other",
-  "text.autoconfig.krlo.option.categories.other.@Tooltip": "Fallback for modded items we cannot classify."
+  "text.autoconfig.krlo.option.categories.other.@Tooltip": "all items that fall outside these categories (i.e. modded items, custom enchanted items like strength 5 dirt)"
 }
