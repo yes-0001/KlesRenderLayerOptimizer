@@ -17,11 +17,11 @@ It's the final 2 weeks at my university for this semester so I only had time for
 
 ## examples of this mod in action:
 (I chose 100 armor stands for these tests because `100` is a more daily occurance than `1000`, only mods installed is what's required [no other optimization mods], works with all other optimization mods)
-#### 100 armor stands not-enchanted (baseline) - `291` fps
+#### 100 armor stands not-enchanted (baseline) - `291fps`
 ![100 armor stands not-enchanted (baseline)](https://cdn.modrinth.com/data/I7pelLQM/images/50925aafbcce3dd80107b436c8b04b7c81ab5e80.png)
-#### 100 armor stands enchanted (mod not enabled) - `261` fps
+#### 100 armor stands enchanted (mod not enabled) - `261fps`
 ![100 armor stands enchanted (mod not enabled)](https://cdn.modrinth.com/data/I7pelLQM/images/3ca9eae787920c923ae6120756c98c57efed4675.png)
-#### 100 armor stands enchanted (mod enabled) - `293` fps
+#### 100 armor stands enchanted (mod enabled) - `293fps`
 ![100 armor stands enchanted (mod enabled)](https://cdn.modrinth.com/data/I7pelLQM/images/01c4deee389e3795569aa860c4096c647d39d5da.png)
 
 ### performance bugs this mod tackles:
