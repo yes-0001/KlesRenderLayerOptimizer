@@ -7,8 +7,11 @@
 	"authors": [
 		"Klecakes"
 	],
-	"contact": {
-	},
+    "contact": {
+        "homepage": "https://modrinth.com/mod/krlo",
+        "issues": "https://github.com/yes-0001/KlesRenderLayerOptimizer/issues",
+        "sources": "https://github.com/yes-0001/KlesRenderLayerOptimizer"
+    },
 	"license": "MIT",
 	"icon": "assets/krlo/icon.png",
 	"environment": "*",
@@ -23,13 +26,6 @@
 	"mixins": [
 		"krlo.mixins.json"
 	],
-    "custom": {
-        "modmenu": {
-            "links": {
-                "krlo.modrinth": "https://modrinth.com/mod/krlo"
-            }
-        }
-    },
 	"depends": {
 		"fabricloader": "*",
 		"minecraft": ">=1.20 <=1.21.4",
