@@ -2,7 +2,7 @@
 Kle's Render Layer Optimizer looks to fix the issues of Minecraft's rendering layers on items and armor. Minecraft's rendering layer tanks your fps when many items or players are on your screen.
 
 ## What are rendering layers and what kind of performance hit do they cause?
-Rendering layers is Minecraft's system to break down how entities, items, and models are drawn for performance and customization. These are the different rendering layers this mod looks to tackle:
+Rendering layers is Minecraft's system to break down how entities, items, and models are drawn for performance. These are the different rendering layers this mod looks to tackle:
 - glint
 - armor trim
 - pattern layers (banners, shields)
