@@ -36,3 +36,8 @@ It's the final 2 weeks at my university for this semester so I only had time for
 - Armor:   player/animal armor and elytra.
 - Other:   all items that fall outside these categories (i.e. modded items, custom enchanted items like strength 5 dirt)
 ```
+
+# Requirements
+- [Fabric API](https://modrinth.com/mod/fabric-api)
+- [Cloth Config API](https://modrinth.com/mod/cloth-config)
+- (optional) [Mod Menu](https://modrinth.com/mod/modmenu)
