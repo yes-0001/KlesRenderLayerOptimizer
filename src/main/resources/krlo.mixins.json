@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.github.yes0001.krlo.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+      "GlintLayer"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

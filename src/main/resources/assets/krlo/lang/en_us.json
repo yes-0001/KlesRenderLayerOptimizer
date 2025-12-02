@@ -1,0 +1,14 @@
+{
+  "text.autoconfig.krlo.title": "Kle's Render Layer Optimizer",
+  "text.autoconfig.krlo.option.masterToggle": "Removes configured rendering layers to increase performance when rendering items, armor, weapons, etc.",
+  "text.autoconfig.krlo.option.masterToggle.@Tooltip": "Enables/Disables the mod",
+  "text.autoconfig.krlo.category.categories": "Category Filters",
+  "text.autoconfig.krlo.option.categories.items": "Items",
+  "text.autoconfig.krlo.option.categories.items.@Tooltip": "Covers general items such as books, tools, and fishing rods.",
+  "text.autoconfig.krlo.option.categories.weapons": "Weapons",
+  "text.autoconfig.krlo.option.categories.weapons.@Tooltip": "Swords, tridents, bows, crossbows, axes, shields, and similar gear.",
+  "text.autoconfig.krlo.option.categories.armor": "Armor",
+  "text.autoconfig.krlo.option.categories.armor.@Tooltip": "Player armor, horse armor, and elytra glint.",
+  "text.autoconfig.krlo.option.categories.other": "Other",
+  "text.autoconfig.krlo.option.categories.other.@Tooltip": "Fallback for modded items we cannot classify."
+}
