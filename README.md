@@ -8,7 +8,7 @@
     <a href="https://discord.gg/klecakes"><img src="https://img.shields.io/discord/1125857151458492539?color=0098DB&label=Discord&logo=discord&logoColor=0098DB"></a>
     <br>
     <a href="https://modrinth.com/mod/krlo"><img src="https://img.shields.io/badge/dynamic/json?color=158000&label=downloads&prefix=+%20&query=downloads&url=https://api.modrinth.com/v2/project/I7pelLQM&logo=modrinth"></a>
-    <!-- <a href="https://curseforge.com/minecraft/mc-mods/krlo"><img src="https://cf.way2muchnoise.eu/full_xxxxxx_downloads.svg"></a> -->
+    <a href="https://curseforge.com/minecraft/mc-mods/krlo"><img src="https://cf.way2muchnoise.eu/full_1396940_downloads.svg"></a>
     <br><br>
     <p>Kle's Render Layer Optimizer looks to fix the issues of Minecraft's rendering layers on items and armor. Minecraft's rendering layer tanks your fps when many items or players are on your screen.</p>
 </div>
