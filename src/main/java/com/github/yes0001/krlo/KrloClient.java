@@ -4,8 +4,17 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigHolder;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
 public class KrloClient implements ClientModInitializer {
+
+    FabricLoader loader = FabricLoader.getInstance();
+
+    Boolean hasLegacyFabric = loader.isModLoaded("fabric");
+    Boolean hasModernFabricAPI = loader.isModLoaded("fabric-api");
+    // Boolean hasVeryLegacyClothConfig = loader.isModLoaded("auto-config");
+    Boolean hasLegacyClothConfig = loader.isModLoaded("cloth-config2");
+    Boolean hasModernClothConfig = loader.isModLoaded("cloth-config");
 
     public static final String MOD_ID = "krlo";
     private static ConfigHolder<KrloConfig> CONFIG_HOLDER;
@@ -13,6 +22,12 @@ public class KrloClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ensureHolder();
+        if (!hasLegacyFabric && !hasModernFabricAPI) {
+            throw new IllegalStateException("no version of fabric-api found.");
+        }
+        if (!hasLegacyClothConfig && !hasModernClothConfig) {
+            throw new IllegalStateException("no version of cloth-config found.");
+        }
     }
 
     public static KrloConfig getConfig() {

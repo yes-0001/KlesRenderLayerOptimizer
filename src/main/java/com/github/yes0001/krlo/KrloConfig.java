@@ -18,12 +18,19 @@ public class KrloConfig implements ConfigData {
         if (!masterToggle) {
             return false;
         }
-        return switch (category) {
-            case ITEMS -> categories.items;
-            case WEAPONS -> categories.weapons;
-            case ARMOR -> categories.armor;
-            case OTHER -> categories.other;
-        };
+
+        switch (category) {
+            case ITEMS:
+                return categories.items;
+            case WEAPONS:
+                return categories.weapons;
+            case ARMOR:
+                return categories.armor;
+            case OTHER:
+                return categories.other;
+            default:
+                throw new IllegalArgumentException("Unknown category: " + category);
+        }
     }
 
     public enum GlintCategory {
