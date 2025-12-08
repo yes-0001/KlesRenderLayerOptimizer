@@ -3,20 +3,18 @@ package com.github.yes0001.krlo.mixin;
 import com.github.yes0001.krlo.KrloClient;
 import com.github.yes0001.krlo.KrloConfig;
 import com.github.yes0001.krlo.KrloConfig.GlintCategory;
-import net.minecraft.item.AnimalArmorItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.CrossbowItem;
+import net.minecraft.item.HorseArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.item.MaceItem;
 import net.minecraft.item.RangedWeaponItem;
 import net.minecraft.item.ShieldItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.TridentItem;
-import net.minecraft.registry.tag.ItemTags;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -59,8 +57,7 @@ public class GlintLayer {
 
 	private boolean isArmor(ItemStack stack, Item item) {
 		return item instanceof ArmorItem
-			|| item instanceof AnimalArmorItem
-			|| stack.isIn(ItemTags.TRIMMABLE_ARMOR)
+			|| item instanceof HorseArmorItem
 			|| stack.isOf(Items.ELYTRA);
 	}
 
@@ -71,7 +68,6 @@ public class GlintLayer {
 			|| item instanceof CrossbowItem
 			|| item instanceof RangedWeaponItem
 			|| item instanceof AxeItem
-			|| item instanceof MaceItem
 			|| item instanceof ShieldItem;
 	}
 
