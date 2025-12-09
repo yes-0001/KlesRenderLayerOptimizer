@@ -48,7 +48,7 @@ public class GlintLayer {
         
         
         String id = item.toString().toLowerCase();
-        return id.contains("horse") && id.contains("armor");
+        return (id.contains("horse") && id.contains("armor")) || id.contains("ARMADILLO") && id.contains("armor");
 	}
 
 	private boolean isWeapon(Item item) {
