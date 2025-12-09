@@ -3,7 +3,7 @@
 	"package": "com.github.yes0001.krlo.mixin",
 	"compatibilityLevel": "JAVA_8",
 	"mixins": [
-      "GlintLayer"
+        "GlintLayer"
 	],
 	"injectors": {
 		"defaultRequire": 1

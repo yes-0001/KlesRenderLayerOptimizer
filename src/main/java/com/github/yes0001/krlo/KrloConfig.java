@@ -29,7 +29,7 @@ public class KrloConfig implements ConfigData {
             case OTHER:
                 return categories.other;
             default:
-                throw new IllegalArgumentException("Unknown category: " + category);
+                return categories.other;
         }
     }
 
