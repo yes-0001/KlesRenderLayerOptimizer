@@ -59,6 +59,7 @@ public class GlintLayer {
             || item instanceof RangedWeaponItem
             || item instanceof AxeItem
             || item instanceof ShieldItem
-            || item.toString().toLowerCase().contains("mace");
+            || item.toString().toLowerCase().contains("mace")
+            || item.toString().toLowerCase().contains("spear");
 	}
 }
