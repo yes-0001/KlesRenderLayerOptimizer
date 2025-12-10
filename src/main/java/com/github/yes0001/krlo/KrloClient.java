@@ -12,7 +12,6 @@ public class KrloClient implements ClientModInitializer {
 
     Boolean hasLegacyFabric = loader.isModLoaded("fabric");
     Boolean hasModernFabricAPI = loader.isModLoaded("fabric-api");
-    // Boolean hasVeryLegacyClothConfig = loader.isModLoaded("auto-config");
     Boolean hasLegacyClothConfig = loader.isModLoaded("cloth-config2");
     Boolean hasModernClothConfig = loader.isModLoaded("cloth-config");
 
