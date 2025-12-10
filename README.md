@@ -23,9 +23,7 @@ Rendering layers is Minecraft's system to break down how entities, items, and mo
 Each layer is another thing for your gpu to draw, from testing, `10` enchanted helmets (`1` layer each) drops your fps by `20-25` compared to `10` non-enchanted helmets.
 
 ## What does this mod do at it's current state?
-Right now it can only disable the glint layer from being rendered, this greatly improves performance on `1000` armor stands w/ enchanted armor from `36fps` to `47fps` (very unrealistic scenario) but it's only the start of what I'd like this mod to do. The other rendering layers and earlier/later game versions (forge, neoforge, and quilt hopefully too) will come in later updates.
-
-It's the final 2 weeks at my university for this semester so I only had time for the glint layer which was my main goal, stay tuned for more!
+Right now it can only disable the glint layer from being rendered, this greatly improves performance on `1000` armor stands w/ enchanted armor from `36fps` to `47fps` (very unrealistic scenario) but it's only the start of what I'd like this mod to do. Forge, neoforge, and quilt will come in later updates as well as the other rendering layers.
 
 ## examples of this mod in action:
 (I chose 100 armor stands for these tests because `100` is a more daily occurance than `1000`, only mods installed is what's required [no other optimization mods], works with all other optimization mods)
