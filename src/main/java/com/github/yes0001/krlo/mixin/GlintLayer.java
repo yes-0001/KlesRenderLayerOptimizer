@@ -29,37 +29,38 @@ public class GlintLayer {
 	}
 
 	private GlintCategory resolveCategory(ItemStack stack) {
-        try {
-		    Item item = stack.getItem();
-            if (isArmor(stack, item)) return GlintCategory.ARMOR;
-            if (isWeapon(item)) return GlintCategory.WEAPONS;
-            if (stack.isEnchantable()) return GlintCategory.ITEMS;
-        } catch (Throwable ignored) {}
-
+        Item item = stack.getItem();
+        if (isArmor(stack, item)) return GlintCategory.ARMOR;
+        if (isWeapon(stack, item)) return GlintCategory.WEAPONS;
+        if (stack.isEnchantable()) return GlintCategory.ITEMS;
 		return GlintCategory.OTHER;
 	}
 
 	private boolean isArmor(ItemStack stack, Item item) {
-
-		if (item instanceof ArmorItem || stack.isOf(Items.ELYTRA)) return true;
-        try {
-            if (item == Items.WOLF_ARMOR) return true;
-        } catch (Throwable ignored) {}
-        
-        
         String id = item.toString().toLowerCase();
-        return (id.contains("horse") && id.contains("armor")) || id.contains("ARMADILLO") && id.contains("armor");
+        boolean check = id.contains("armor")
+            || id.contains("elytra")
+            || id.contains("helmet")
+            || id.contains("chestplate")
+            || id.contains("leggings")
+            || id.contains("boots")
+            || id.contains("cap")
+            || id.contains("tunic")
+            || id.contains("pants");
+        // System.out.println("// isArmor // - " + id + ", " + check);
+        return check;
 	}
 
-	private boolean isWeapon(Item item) {
-        return item instanceof SwordItem
-            || item instanceof TridentItem
-            || item instanceof BowItem
-            || item instanceof CrossbowItem
-            || item instanceof RangedWeaponItem
-            || item instanceof AxeItem
-            || item instanceof ShieldItem
-            || item.toString().toLowerCase().contains("mace")
-            || item.toString().toLowerCase().contains("spear");
+	private boolean isWeapon(ItemStack stack, Item item) {
+        String id = item.toString().toLowerCase();
+        boolean check = id.contains("sword")
+            || id.contains("trident")
+            || id.contains("bow") // includes crossbow
+            || id.contains("_axe") // axes only, no pickaxes
+            || id.contains("shield")
+            || id.contains("mace")
+            || id.contains("spear");
+        // System.out.println("// isWeapon // - " + id + ", " + check);
+        return check;
 	}
 }
