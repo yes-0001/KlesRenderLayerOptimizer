@@ -8,30 +8,47 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 @Config(name="krlo")
 public class KrloConfig implements ConfigData {
 
+
     @ConfigEntry.Gui.Tooltip
-    public boolean masterToggle = true;
+    public boolean glintToggle = true;
 
-    @ConfigEntry.Gui.TransitiveObject
-    public final CategoryToggles categories = new CategoryToggles();
+    // @ConfigEntry.Gui.Tooltip
+    // public boolean patternToggle = true;
 
-    public boolean isEnabledFor(GlintCategory category) {
-        if (!masterToggle) {
-            return false;
-        }
+
+    @ConfigEntry.Gui.CollapsibleObject(startExpanded = false)
+    public final GlintCategoryToggles glint = new GlintCategoryToggles();
+
+
+    // @ConfigEntry.Gui.CollapsibleObject(startExpanded = false)
+    // public PatternCategoryToggles pattern = new PatternCategoryToggles();
+
+
+
+    public boolean isGlintEnabledFor(GlintCategory category) {
+        if (!glintToggle) return false;
 
         switch (category) {
-            case ITEMS:
-                return categories.items;
-            case WEAPONS:
-                return categories.weapons;
-            case ARMOR:
-                return categories.armor;
-            case OTHER:
-                return categories.other;
-            default:
-                return categories.other;
+            case ITEMS:   return glint.items;
+            case WEAPONS: return glint.weapons;
+            case ARMOR:   return glint.armor;
+            case OTHER:   return glint.other;
+            default:      return false;
         }
     }
+
+
+    // public boolean isPatternEnabledFor(PatternCategory category) {
+    //     if (!patternToggle) return false;
+
+    //     switch (category) {
+    //         case BANNERS: return pattern.banners;
+    //         case SHIELDS: return pattern.shields;
+    //         default:      return false;
+    //     }
+    // }
+
+
 
     public enum GlintCategory {
         ITEMS,
@@ -40,7 +57,7 @@ public class KrloConfig implements ConfigData {
         OTHER
     }
 
-    public static class CategoryToggles {
+    public static class GlintCategoryToggles {
         @ConfigEntry.Gui.Tooltip
         public boolean items = true;
 
@@ -53,4 +70,19 @@ public class KrloConfig implements ConfigData {
         @ConfigEntry.Gui.Tooltip
         public boolean other = true;
     }
+
+
+
+    // public enum PatternCategory {
+    //     BANNERS,
+    //     SHIELDS
+    // }
+
+    // public static class PatternCategoryToggles {
+    //     @ConfigEntry.Gui.Tooltip
+    //     public boolean banners = true;
+
+    //     @ConfigEntry.Gui.Tooltip
+    //     public boolean shields = true;
+    // }
 }

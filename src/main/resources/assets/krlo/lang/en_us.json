@@ -1,14 +1,21 @@
 {
-  "text.autoconfig.krlo.title": "Kle's Render Layer Optimizer",
-  "text.autoconfig.krlo.option.masterToggle": "Removes configured rendering layers to increase performance when rendering items, armor, weapons, etc.",
-  "text.autoconfig.krlo.option.masterToggle.@Tooltip": "Enables/Disables the mod",
-  "text.autoconfig.krlo.category.categories": "Category Filters",
-  "text.autoconfig.krlo.option.categories.items": "Items",
-  "text.autoconfig.krlo.option.categories.items.@Tooltip": "fishing rod, books, tools (flint & steel, carrot on a stick, brush, compass, shears, etc.)",
-  "text.autoconfig.krlo.option.categories.weapons": "Weapons",
-  "text.autoconfig.krlo.option.categories.weapons.@Tooltip": "swords, tridents, bows, crossbows, axes, maces, spears, and shields.",
-  "text.autoconfig.krlo.option.categories.armor": "Armor",
-  "text.autoconfig.krlo.option.categories.armor.@Tooltip": "player/animal armor and elytra.",
-  "text.autoconfig.krlo.option.categories.other": "Other",
-  "text.autoconfig.krlo.option.categories.other.@Tooltip": "all items that fall outside these categories (i.e. modded items, custom enchanted items like strength 5 dirt)"
+    "text.autoconfig.krlo.title": "Kle's Render Layer Optimizer",
+    
+
+    "text.autoconfig.krlo.option.glintToggle": "Disable glint layer.",
+    "text.autoconfig.krlo.option.glintToggle.@Tooltip": "Enables/Disables glint layer rendering.",
+
+
+    "text.autoconfig.krlo.option.glint": "Glint Categories",
+    "text.autoconfig.krlo.option.glint.items": "Items",
+    "text.autoconfig.krlo.option.glint.items.@Tooltip": "Fishing rod, books, tools (flint & steel, carrot on a stick, brush, compass, shears, etc.)",
+
+    "text.autoconfig.krlo.option.glint.weapons": "Weapons",
+    "text.autoconfig.krlo.option.glint.weapons.@Tooltip": "Swords, tridents, bows, crossbows, axes, maces, spears, and shields.",
+
+    "text.autoconfig.krlo.option.glint.armor": "Armor",
+    "text.autoconfig.krlo.option.glint.armor.@Tooltip": "Player/animal armor and elytra.",
+
+    "text.autoconfig.krlo.option.glint.other": "Other",
+    "text.autoconfig.krlo.option.glint.other.@Tooltip": "All other items — modded items, custom enchanted items, etc."
 }

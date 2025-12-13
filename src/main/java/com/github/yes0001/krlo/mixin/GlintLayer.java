@@ -16,14 +16,14 @@ public class GlintLayer {
 	@Inject(method="hasGlint", at=@At("HEAD"), cancellable=true)
 	private void disableGlint(CallbackInfoReturnable<Boolean> cir) {
         KrloConfig config = KrloClient.getConfig();
-        if (config == null || !config.masterToggle) return;
+        if (config == null || !config.glintToggle) return;
 
         ItemStack stack = (ItemStack) (Object) this;
         GlintCategory category = resolveCategory(stack);
 
         if (!stack.hasEnchantments()) return;
 
-        if (config.isEnabledFor(category)) {
+        if (config.isGlintEnabledFor(category)) {
             cir.setReturnValue(false);
         }
 	}
